@@ -29,8 +29,7 @@ export const ReactView = () => {
     }
 
     useEffect(() => {
-        fetch('../public/data/users.json').then(response => response.json()).then(data=>console.log(data))
-
+        fetch('../public/data/users.json').then(response => response.json()).then(data=>setUsers(data))
     }, [])
 
     useEffect(()=>{
